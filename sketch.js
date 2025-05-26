@@ -103,9 +103,9 @@ function draw() {
       default:
         const randomNum = random(1, 100)
         if(randomNum < 80) {
-          text(random(Array.from("💀💀💀❓❓🔥")), ...p)
+          text(random(Array.from("💀💀❓")), ...p)
         }else{
-          text(random(Array.from("👹💎💰")), ...p)
+          text(random(Array.from("👹💎💰🔥")), ...p)
         }
     }
   }
