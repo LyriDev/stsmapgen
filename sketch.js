@@ -98,10 +98,15 @@ function draw() {
         text("😀", ...p)
         break
       case JSON.stringify(endPoint):
-        text("😈", ...p)
+        text("👑", ...p)
         break
       default:
-        text(random(Array.from("💀💀💀💰❓")), ...p)
+        const randomNum = random(1, 100)
+        if(randomNum < 80) {
+          text(random(Array.from("💀💀💀❓❓🔥")), ...p)
+        }else{
+          text(random(Array.from("👹💎💰")), ...p)
+        }
     }
   }
   pop()
